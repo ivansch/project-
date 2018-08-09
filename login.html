@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/scss/bootstrap.css" >
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700,800" rel="stylesheet">
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <header>
+      <div><img src="#" alt="">Talleres</div>
+      <ul>
+        <li>Registrate</li>
+        <li>Asociate</li>
+      </ul>
+    </header>
+<section class="row">
+  <article class="singup" class="col-md-6 col-xl-6 col-sm-6">
+    <p>Sing up</p>
+    <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Correo electronico</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Contraseña</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+|</article>
+|<article class="login" class="col  -md-6 col-xl-6 col-sm-6">
+|<p>Login</p>
+  <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Correo electronico</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Contraseña</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="">
+
+   <button type="submit" class="btn btn-primary">Submit</button>
+   <div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+ </div>
+</form>
+
+</article>
+</section>
+<div class="">
+  <p>Tenes un taller? Asociate aca</p>
+</div>
+  <footer>
+    <ul>
+      <li><a class="footer" href="#">¿Quienes somos?</a></li>
+      <li><a class="footer" href="#">Preguntas Frecuentes</a></li>
+    </ul>
+  </footer>
+  </body>
+</html>
