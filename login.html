@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+  <head class="container-fluid">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
@@ -8,28 +8,29 @@
     <link rel="stylesheet" href="css/login.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700,800" rel="stylesheet">
   </head>
-  <body>
-    <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+  <body class="container-fluid">
   <header>
-      <div><img src="#" alt="">Talleres</div>
+      <nav>
+        <ul>
+          <li>Registrate</li>
+          <li>Asociate</li>
+        </ul>
+      </nav>
       <ul>
-        <li>Registrate</li>
-        <li>Asociate</li>
-      </ul>
+
     </header>
+<div class="container">
+
+
 <section class="row">
   <article class="singup" class="col-md-6 col-xl-6 col-sm-6">
-    <p>Sing up</p>
+    <p class="text1">¿Sos nuevo?</p>
     <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Nombre</label><input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
     <div class="form-group">
-      <label for="exampleInputEmail1">Correo electronico</label>
+      <label for="exampleInputEmail1">Email</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
     <div class="form-group">
@@ -37,14 +38,14 @@
       <input type="password" class="form-control" id="exampleInputPassword1">
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="crear_cuenta">Crear cuenta</button>
   </form>
-|</article>
-|<article class="login" class="col  -md-6 col-xl-6 col-sm-6">
-|<p>Login</p>
+</article>
+<article class="login" class="col  -md-6 col-xl-6 col-sm-6">
+<p class="text2">Inicia sesión</p>
   <form>
   <div class="form-group">
-    <label for="exampleInputEmail1">Correo electronico</label>
+    <label for="exampleInputEmail1">Email</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="form-group">
@@ -63,11 +64,21 @@
 <div class="">
   <p>Tenes un taller? Asociate aca</p>
 </div>
-  <footer>
-    <ul>
-      <li><a class="footer" href="#">¿Quienes somos?</a></li>
-      <li><a class="footer" href="#">Preguntas Frecuentes</a></li>
-    </ul>
-  </footer>
-  </body>
+</div>
+<footer class="container-fluid">
+  <ul>
+    <li><a class="footer" href="#">¿Quienes somos?</a></li>
+    <li><a class="footer" href="#">Preguntas Frecuentes</a></li>
+
+  </ul>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+</body>
+
+
 </html>
